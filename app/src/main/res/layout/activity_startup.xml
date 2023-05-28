@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gif="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".StartupActivity">
+
+
+    <!-- Game Description Text -->
+
+    <!-- Timer Game Mode Button -->
+
+    <!-- Learn Game Mode Button -->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/title_image"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/camera"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/title_image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:text="Choose a game mode"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_image" />
+
+    <Button
+        android:id="@+id/demo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Demo"
+        android:textSize="16sp"
+        android:backgroundTint="#cb7b29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_text" />
+
+<!--    <Button-->
+<!--        android:id="@+id/timer_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/demo_button"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="13dp"-->
+<!--        android:text="Timer"-->
+<!--        android:textSize="16sp"-->
+<!--        android:backgroundTint="#cb7b29"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/demo_button" />-->
+
+    <Button
+        android:id="@+id/learn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/demo_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Game"
+        android:textSize="16sp"
+        android:backgroundTint="#cb7b29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/demo_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
